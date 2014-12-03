@@ -286,11 +286,11 @@ a {
 }
 
 a:hover {
-    color: #40c9f4
+    color: #1e65c3;
 }
 
 a:active {
-    color: #0b97c3
+    color: #1e65ff;
 }
 
 .error {
