@@ -279,14 +279,14 @@ body {
 }
 
 a {
-    color: #10bbf1;
+    color: #1e65c3;
     cursor: pointer;
     background: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: #1e65c3;
+    color: #1e65ff;
 }
 
 a:active {
