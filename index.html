@@ -1,228 +1,128 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>Hoover | Studios</title>
-    <meta name="description" content="A free responsive HTML 5 template with a clean style.">
-    <meta name="keywords" content="free template, html 5, responsive, clean, scss">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 9]>
-        <script src="js/html5.js"></script>
-        <script src="js/respond.js"></script>
-    <![endif]-->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<title>Hoover | Studios</title>
+	
+	<style>
+		* { margin: 0; padding: 0; }
+		
+		html { 
+			background: 
+                linear-gradient(
+                rgba(0, 0, 0, 0.25), 
+                rgba(0, 0, 0, 0.25)
+                ), 
+                linear-gradient(
+                rgba(255, 255, 255, 0.1), 
+                rgba(255, 255, 255, 0.1)
+                ), url(http://www.hooverstudios.com/images/desk2.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+        body {
+            color: #fff;
+            font-family: "Open Sans",sans-serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+        }
+		
+		#page-wrap { 
+            /* width: 90%; */
+            max-width: 960px; 
+            margin: auto; 
+            margin-top: 10%;
+            padding: 20px; 
+            background: transparent; 
+            text-align: center;
+        }
+		p { 
+            font-size: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        #logo {
+            width: 100%; 
+            max-width: 480px;
+            display: block;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        
+        .button {
+            color: white;
+            background: #1e65c3;
+            min-height: 58px;
+            border: 2px solid transparent;
+            font: 300 22px "Open Sans", sans-serif;
+            padding: 0 21px;
+            -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+            -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+            -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+            -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+            transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .button:hover {
+            background: #1E65FF;
+            border-color: #1E65FF;
+        }
+
+        a.button {
+            text-decoration: none;
+            display: inline-block;
+            line-height: 54px;
+            color: white;
+            display: inline-block;
+            margin: auto;
+            margin-top: 5px;
+        }
+        a.email {
+        	color: #fff;
+        }
+        
+        /* RESPONSIVE */
+		@media (max-width: 960px) {
+			p { 
+                font-size: 30px;
+            }
+		}
+		@media (max-width: 680px) {
+			p { 
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            #logo {
+            	margin-bottom: 20px;
+            }
+            #page-wrap { 
+            	margin-top: 20px;
+            }
+		}
+	</style>
 </head>
-<body class="no-js">
-    <div class="main">
-        <header>
-            <div class="wrap">
-                <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img">
-                <div class="header-wrapper">
-                    <img id="logo" src="images/hs_logo_retina.png">
-                    <p>Launch a responsive website including domain, hosting, design, and maintenance starting at just $99/month with <u>NO</u> contract.</p>
-                    <div class="buttons-wrapper">
-                        <a href="#" class="button">Sign Up For Free</a>
-                        <a href="#howitworks" class="button button-stripe">See How It Works</a>
-                    </div>
-                </div>
-                <!-- /.header-wrapper -->
-            </div>
-            <!-- /.wrap -->
-        </header>
-        <div id="howitworks" class="spanning">
-            <div class="promo clearfix">
-                <div class="wrap">
-                    <div class="promo-wrapper clearfix">
-                        <div class="promo-column">
-                            <img src="upload/pin.png" height="32" width="24" alt="">
-                            <h5>1. Select A Plan</h5>
-                            <p><a href="#basic">$99/mo - Basic</a><br><a href="#standard">$299/mo - Standard</a><br><a href="#plus">$499/mo - Plus</a></p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="upload/settings.png" height="32" width="33" alt="">
-                            <h5>2. Content Worksheet</h5>
-                            <p>Fill out the worksheet to reflect the content you want on your site and we'll integrate into our industry standard, optimized template.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="upload/easy.png" height="32" width="34" alt="">
-                            <h5>3. Go Live</h5>
-                            <p>Once all the content has been integrated and rigorously tested, we'll push it live to the web with high speed, reliable hosting.</p>
-                        </div>
-                        <div class="promo-column">
-                            <img src="upload/saturn.png" height="32" width="32" alt="">
-                            <h5>4. Maintenance</h5>
-                            <p>Simply access your content worksheet, indicate your content changes, and they'll be live on your site within 48 hours.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.promo clearfix -->
-            <div class="discover clearfix">
-                <div class="wrap">
-                    <div class="discover-content clearfix">
-                        <h2>TEMPLATE?</h2>
-                        <p>Hundreds of hours went into the design, coding, and refinement of our base template to adhere to strict standards, semantics, and optimization.  This allows us to get your site up quickly, ensure it's up to industry standards, and pass the savings on to you. You get a great looking base site and can use your maintenance hours to further customize your site's design.</p>
-                        <div class="discover-button clearfix">
-                            <a href="#" class="button button-download">
-                                <span class="button-download-title">Demo For</span>
-                                <span class="button-download-subtitle">Single Page</span>
-                            </a>
-                            <a href="#" class="button button-download android">
-                                <span class="button-download-title">Demo For</span>
-                                <span class="button-download-subtitle">E-Commerce</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="discover-img">
-                        <div class="discover-img-inside"><img src="upload/discover.png" height="486" width="634" alt=""></div>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.discover clearfix -->
-            <!-- COMMENT OUT VIDEO SECTION
-            <div class="video clearfix">
-                <div class="wrap">
-                    <div class="video-title">Explore. Walk &amp; Ride in action</div>
-                    <div class="video-subtitle">Just try it for yourself</div>
-                    <div class="video-block">
-                       <iframe src="//player.vimeo.com/video/106575373?portrait=0" width="814" height="458" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-                            <li class="video-share-title">Share it with your friends:</li>
-                            <li><a href="#" class="social-twitter">via <strong>Twitter</strong></a></li>
-                            <li><a href="#" class="social-facebook">via <strong>Facebook</strong></a></li>
-                            <li><a href="#" class="social-google">via <strong>Google+</strong></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            <!--</div> END COMMENT VIDEO -->
-            <!-- /.videos clearfix -->
-            <!-- COMMENT OUT COMMENT SECTION
-            <div class="comments clearfix">
-                <div class="wrap">
-                    <div class="tab">
-                        <div class="box visible">
-                            <h4>People talking about <a href="#">#WalkandRide</a></h4>
-                            <p>Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.</p>
-                        </div>
-                        <div class="box">
-                            <h4>Users loving <a href="#">#WalkandRide</a></h4>
-                            <p>Joining this weekend's #WalkandRide fun! @emmy_lemmy bring your dogs, we can make it a fun walk!</p>
-                        </div>
-                        <div class="box">
-                            <h4>Folks enjoying <a href="#">#WalkandRide</a></h4>
-                            <p>Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.</p>
-                        </div>
-                        <ul class="tabs">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <a href="#" class="tab-prev"></a>
-                        <a href="#" class="tab-next"></a>
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            <!--</div> END COMMENT VIDEO -->
-            <!-- /.comments clearfix -->
-            <div id="basic" class="simple clearfix">
-                <div class="wrap">
-                    <div class="simple-content">
-                        <h3>$99/Month</h3>
-                        <ul>
-                            <li class="clearfix"><img src="upload/ico1.png" height="32" width="32" alt=""><span>Basic Plan</span></li>
-                            <li class="clearfix"><img src="upload/ico2.png" height="32" width="32" alt=""><span>Single Page Design</span></li>
-                            <li class="clearfix"><img src="upload/ico3.png" height="32" width="32" alt=""><span>1 Hour Of Maintenance</span></li>
-                            <a href="#" class="button block">Select This Plan</a>
-                        </ul>
-                    </div>
-                    <div class="simple-img">
-                        <img src="upload/screen.png" height="508" width="587" alt="">
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <hr>
-            <div id="standard" class="simple clearfix">
-                <div class="wrap">
-                    <div class="simple-content">
-                        <h3>$299/Month</h3>
-                        <ul>
-                            <li class="clearfix"><img src="upload/ico1.png" height="32" width="32" alt=""><span>Standard Website</span></li>
-                            <li class="clearfix"><img src="upload/ico2.png" height="32" width="32" alt=""><span>Unlimited Pages</span></li>
-                            <li class="clearfix"><img src="upload/ico3.png" height="32" width="32" alt=""><span>4 Hours Of Maintenance</span></li>
-                            <a href="#" class="button block">Sign Up For Free</a>
-                        </ul>
-                    </div>
-                    <div class="simple-img">
-                        <img src="upload/screen.png" height="508" width="587" alt="">
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <hr>
-            <div id="plus" class="simple clearfix">
-                <div class="wrap">
-                    <div class="simple-content">
-                        <h3>$499/Month</h3>
-                        <ul>
-                            <li class="clearfix"><img src="upload/ico1.png" height="32" width="32" alt=""><span>E-Commerce Site</span></li>
-                            <li class="clearfix"><img src="upload/ico2.png" height="32" width="32" alt=""><span>Unlimited Pages</span></li>
-                            <li class="clearfix"><img src="upload/ico3.png" height="32" width="32" alt=""><span>10 Hours Of Maintenance</span></li>
-                            <li class="clearfix"><img src="upload/ico5.png" height="32" width="32" alt=""><span>Daily Backup</span></li>
-                            <a href="#" class="button block">Sign Up For Free</a>
-                        </ul>
-                    </div>
-                    <div class="simple-img">
-                        <img src="upload/screen.png" height="508" width="587" alt="">
-                    </div>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.simple clearfix -->
-            <div class="newsletter clearfix">
-                <div class="wrap">
-                    <div class="newsletter-title">our newsletter</div>
-                    <div class="newsletter-form clearfix">
-                        <form action="">
-                            <input type="email" placeholder="john@doe.com" class="input-text">
-                            <input type="button" class="button" value="Subscribe">
-                        </form>
-                    </div>
-                    <p>If you want to recieve monthly updates from us just pop your email in the box. We think that spam is for jerks. And we are no jerks.</p>
-                </div>
-                <!-- /.wrap -->
-            </div>
-            <!-- /.newsletter clearfix -->
-        </div>
-        <!-- /.spanning-columns -->
+    
+<body>
+
+    <div id="page-wrap">
+        <img id="logo" src="http://hooverstudios.com/images/hs_logo_retina.png">
+        <p>Launch a responsive website including domain, hosting, design, and maintenance starting at just $99/month with <u>NO</u> contract.</p>
+        <a class="button" href="mailto:getstarted@hooverstudios.com?subject=New%20Website&amp;body=Thanks for your interest in a managed website with Hoover Studios!  Please provide the following information and we'll start working on your site right away.  The first month is free and there is no obligation to continue.  After we receive your information, one of our team members will be assigned to your account.  There will be no automated replies and no canned messages.  All contact is with a human being living in the United States. %0D%0A%0D%0AName: %0D%0A%0D%0APhone: %0D%0A%0D%0AWebsite Type (Business, Personal, ETC): %0D%0A%0D%0A Website Name: %0D%0A%0D%0AProvide your initial website text content below.  Also attach any images that you want to be included on the site to this email.  We will use this initial content to build your site.  If you don't have any content, don't worry, we can provide some basic content and stock images to get you started.%0D%0A%0D%0A">GET STARTED FOR FREE</a><br>
+        <span style="line-height: 40px;">No Credit Card Required</span>
     </div>
-    <!-- /.main -->
-    <footer>
-        <div class="wrap">
-            <p>&copy; 2014 <strong>Hoover | Studios</strong>, All Rights Reserved</p>
-        </div>
-        <!-- /.wrap -->
-    </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/library.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/retina.js"></script>
+    
 </body>
+
 </html>
