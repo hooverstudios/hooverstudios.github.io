@@ -1,127 +1,78 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	<title>Hoover | Studios</title>
-	
-	<style>
-		* { margin: 0; padding: 0; }
-		
-		html { 
-			background: 
-                linear-gradient(
-                rgba(0, 0, 0, 0.25), 
-                rgba(0, 0, 0, 0.25)
-                ), 
-                linear-gradient(
-                rgba(255, 255, 255, 0.1), 
-                rgba(255, 255, 255, 0.1)
-                ), url(https://www.hooverstudios.com/images/desk2.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-        body {
-            color: #fff;
-            font-family: "Open Sans",sans-serif;
-            font-weight: 300;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
-        }
-		
-		#page-wrap { 
-            /* width: 90%; */
-            max-width: 960px; 
-            margin: auto; 
-            margin-top: 10%;
-            padding: 20px; 
-            background: transparent; 
-            text-align: center;
-        }
-		p { 
-            font-size: 40px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        #logo {
-            width: 100%; 
-            max-width: 480px;
-            display: block;
-            margin: auto;
-            margin-bottom: 40px;
-        }
-        
-        .button {
-            color: white;
-            background: #1e65c3;
-            min-height: 58px;
-            border: 2px solid transparent;
-            font: 300 22px "Open Sans", sans-serif;
-            padding: 0 21px;
-            -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
-            -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
-            -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
-            -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
-            transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .button:hover {
-            background: #1E65FF;
-            border-color: #1E65FF;
-        }
-
-        a.button {
-            text-decoration: none;
-            display: inline-block;
-            line-height: 54px;
-            color: white;
-            display: inline-block;
-            margin: auto;
-            margin-top: 5px;
-        }
-        a.email {
-        	color: #fff;
-        }
-        
-        /* RESPONSIVE */
-		@media (max-width: 960px) {
-			p { 
-                font-size: 30px;
-            }
-		}
-		@media (max-width: 680px) {
-			p { 
-                font-size: 20px;
-                margin-bottom: 20px;
-            }
-            #logo {
-            	margin-bottom: 20px;
-            }
-            #page-wrap { 
-            	margin-top: 20px;
-            }
-		}
-	</style>
+<meta charset="utf-8">
+<meta name="description" content="Managed one page websites for $99/month. You take care of business, we'll take care of the website.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<title>Hoover | Studios</title>
+<style>
+* {margin: 0; padding: 0;}
+html {border-top: 5px solid rgba(0,0,0,0.85);}
+body {border-top: 5px solid #1e65c3; background: #fafafa; color: rgba(0,0,0,0.85); font-family: "Open Sans",sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -webkit-text-size-adjust: none;}
+#page-wrap {max-width: 960px; margin: auto; margin-top: 8%; padding: 20px; text-align: center;}
+p {font-size: 2.5em; margin-bottom: 40px;}
+h1 {font-family: 'Alfa Slab One', cursive; margin-bottom: 30px; font-size: 3.75em;}
+h2 {margin-bottom: 25px; color: #1e65c3;}
+h3 {margin: 60px 0 5px 0;}
+hr {border: 0; height: 0; margin: 120px 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+nav {position: fixed; top: 0; width: 100%; height: 50px; background: rgba(0,0,0,0.85); text-align: center; }
+nav a {color: #fff; font-weight: 700; text-decoration: none; line-height: 50px; padding: 0 10px;}
+nav a:hover {color: #1E99FF;}
+img {width: 100%;}
+.button {color: white; background: #1e65c3; border: 2px solid transparent; font: 300 2.5em "Open Sans", sans-serif; padding: 20px; transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear; border-radius: 5px; box-sizing: border-box;}
+.button:hover {background: #1E65FF; border-color: #1E65FF;}
+a.button { text-decoration: none; display: inline-block; color: #fff; display: inline-block; margin: auto; margin-top: 5px;}
+a.button:hover {color: #fff;}
+a.email {color: #fff;}
+a {color: rgba(0,0,0,0.85);}
+a:hover {color: #1E65FF; transition: color 0.2s linear;}
+footer {height: 100px; width: 100%; background: rgba(0,0,0,0.85); border-top: 5px solid #1e65c3;}
+.icon {font-size: 3.75em;}
+@media (max-width: 960px) {hr {margin: 80px 0;}h1 {font-size: 2.75em;} p {font-size: 1.875em; margin-bottom: 30px;} h2 {font-size: 1em; margin-bottom: 15px;} .button {font-size: 1.75em; padding: 15px;}}
+@media (max-width: 680px) {p {font-size: 1.25em; margin-bottom: 20px;} #logo {margin-bottom: 20px;} .button {font-size: 1.25em; padding: 10px;}}
+@media (max-width: 525px) {hr {margin: 40px 0;} h1 {font-size: 3.25em;} h2 {font-size: 1em; margin-bottom: 15px;} .button {font-size: 1.25em; padding: 10px;} .hide{display:none;} .topline{border-top: 5px solid #1e65c3;}.icon {margin-bottom: 40px; font-size: 2.5em;}}
+</style>
 </head>
-    
 <body>
-
     <div id="page-wrap">
-        <img id="logo" src="https://hooverstudios.com/images/hs_logo_retina.png">
-        <p>Launch a responsive website including domain, hosting, design, and maintenance starting at just $99/month with <u>NO</u> contract.</p>
-        <a class="button" href="mailto:getstarted@hooverstudios.com?subject=New%20Website&amp;body=Thanks for your interest in a managed website with Hoover Studios!  Please provide the following information and we'll start working on your site right away.  The first month is free and there is no obligation to continue.  After we receive your information, one of our team members will be assigned to your account.  There will be no automated replies and no canned messages.  All contact is with a human being living in the United States. %0D%0A%0D%0AName: %0D%0A%0D%0APhone: %0D%0A%0D%0AWebsite Type (Business, Personal, ETC): %0D%0A%0D%0A Website Name: %0D%0A%0D%0AProvide your initial website text content below.  Also attach any images that you want to be included on the site to this email.  We will use this initial content to build your site.  If you don't have any content, don't worry, we can provide some basic content and stock images to get you started.%0D%0A%0D%0A">GET STARTED FOR FREE</a><br>
+        <h1>H<span class="hide">OOVER</span> <span style="color: #1e65c3;">|</span> S<span class="hide">TUDIOS</span></h1>
+        <h2 style="margin-top: -20px;">MANAGED ONE PAGE WEBSITES</h2>
+        <p>Everything you need to get your website online and maintained for just $99/month with <u>NO</u> contract.</p>
+        <a class="button" href="mailto:getstarted@hooverstudios.com?subject=New%20Website&amp;body=Thanks for your interest in a managed website with Hoover Studios!  Please provide the following information and we'll start working on your site right away.  The first month is free and there is no obligation to continue.  After we receive your information, one of our team members will be assigned to your account.  There will be no automated replies and no canned messages.  All contact is with a human being living in the United States. %0D%0A%0D%0AName: %0D%0A%0D%0APhone: %0D%0A%0D%0ADesired URL (i.e. www.hooverstudios.com): %0D%0A%0D%0ADescription of Website (business, hobby, personal): %0D%0A%0D%0AProvide your initial website text content below.  Also attach any images that you want to be included on the site to this email.  We will use this initial content to build your site.  If you don't have any content, don't worry, we can provide some basic content and stock images to get you started. After your initial website is built, you’ll receive 1 hour of monthly maintenance to change content as you see fit.%0D%0A%0D%0A">GET STARTED FOR FREE</a>
+        <br>
+        <br>
+        <span class="icon"><i class="fa fa-chevron-down"></i></span>
+        <hr>
+        <h2>HOW IT WORKS</h2>
+        <p>You fill out the <a href="mailto:getstarted@hooverstudios.com?subject=New%20Website&amp;body=Thanks for your interest in a managed website with Hoover Studios!  Please provide the following information and we'll start working on your site right away.  The first month is free and there is no obligation to continue.  After we receive your information, one of our team members will be assigned to your account.  There will be no automated replies and no canned messages.  All contact is with a human being living in the United States. %0D%0A%0D%0AName: %0D%0A%0D%0APhone: %0D%0A%0D%0ADesired URL (i.e. www.hooverstudios.com): %0D%0A%0D%0ADescription of Website (business, hobby, personal): %0D%0A%0D%0AProvide your initial website text content below.  Also attach any images that you want to be included on the site to this email.  We will use this initial content to build your site.  If you don't have any content, don't worry, we can provide some basic content and stock images to get you started. After your initial website is built, you’ll receive 1 hour of monthly maintenance to change content as you see fit.%0D%0A%0D%0A">content worksheet</a>, we'll get you a domain, setup hosting, integrate your content into our design, and get your site live in 72 hours or less.</p>
+        <hr>
+        <h2>WEBSITE FEATURES</h2>
+        <p>
+        Hand Coded Layout, Responsive Design, SSL, Custom Banner, Photo Gallery, Contact Form, Google Maps, Social Media Integration, and Monthly Maintenance.
+        </p>
+        <hr>
+        <h2>PRICING</h2>
+        <p>
+        <span style="font-weight: 700;">$99/MONTH</span> <br> It's as simple as that.  No hidden fees or charges. No contracts. Cancel whenever you'd like, with no hassle.
+        </p>
+        <hr>
+        <h2>RECENT SITES</h2>
+        <img style="margin-top: 20px;" src="warpspeed.jpg">
+        <img style="margin-top: 20px;" src="mmbscreenshot.jpg">
+        <img style="margin-top: 20px;" src="northernscreenshot.jpg">
+        <hr>
+        <h2>SIGN UP</h2>
+        <p>
+        <span style="font-weight: 700;">GET YOUR FIRST MONTH FREE!</span> <br> We're so confident that you'll love our service, that we'll give you the first month for free, no risk.
+        </p>
+        <p><a href="mailto:getstarted@hooverstudios.com?subject=New%20Website&amp;body=Thanks for your interest in a managed website with Hoover Studios!  Please provide the following information and we'll start working on your site right away.  The first month is free and there is no obligation to continue.  After we receive your information, one of our team members will be assigned to your account.  There will be no automated replies and no canned messages.  All contact is with a human being living in the United States. %0D%0A%0D%0AName: %0D%0A%0D%0APhone: %0D%0A%0D%0ADesired URL (i.e. www.hooverstudios.com): %0D%0A%0D%0ADescription of Website (business, hobby, personal): %0D%0A%0D%0AProvide your initial website text content below.  Also attach any images that you want to be included on the site to this email.  We will use this initial content to build your site.  If you don't have any content, don't worry, we can provide some basic content and stock images to get you started. After your initial website is built, you’ll receive 1 hour of monthly maintenance to change content as you see fit.%0D%0A%0D%0A">getstarted@hooverstudios.com</a><br>
+</p>
+        <span>Questions? Get ahold of us at: <a href="mailto:questions@hooverstudios.com">questions@hooverstudios.com</a></span>
+        <hr>
     </div>
-    
+    <footer></footer>
 </body>
-
 </html>
